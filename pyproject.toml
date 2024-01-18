@@ -1,0 +1,24 @@
+[project]
+name = "ppe"
+version = "0.1.0"
+description = "A solution repo for \"Python Programming Exercises, Gently Explained\" by Al Sweigart"
+authors = [
+    {name = "Chenyu Lue", email = "chenyulue@163.com"},
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.4",
+]
